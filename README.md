@@ -17,12 +17,6 @@ To-do-app is a RESTful API for managing to-do lists.
 | GET | /resources/{id} | {id} - identifier of specific resource | 200 OK - resource with specified id <br />404 Not found - if resource with the given {id} does not exist |
 | POST | /resources | JSON object for the resource to be created | 201 Created - the newly created resource <br />409 Conflict - if a resource with a specified unique field already exists |
 | PUT | /resources/{id} | {id} - identifier of the resource to be updated Request body - JSON object to be updated | 200 OK - the successfully updated resource <br />404 Not found - if resource with the given {id} does not exist <br />409 Conflict - if a resource with a specified unique field already exists |
-| PATCH | /resources/{id} | {id} - identifier of the resource to be updated Request body - partial JSON object with the fields to be updated | 200 OK - the successfully updated resource <br />
-404 Not found - if resource with the given {id} does not exist <br />
-409 Conflict - if a resource with a specified unique field already exists |
-
-
-
-
-
-
+| PATCH | /resources/{id} | {id} - identifier of the resource to be updated Request body - partial JSON object with the fields to be updated | 200 OK - the successfully updated resource <br />404 Not found - if resource with the given {id} does not exist <br />409 Conflict - if a resource with a specified unique field already exists |
+| DELETE | /resources/{id} | {id} - identifier of the resource to be deleted | 204 No Content - if the resource is deleted successfully<br />404 Not Found - if the resource does not exist |
+| GET | /resources/{id}/nested-resources | {id} - identifier of the requested resource | 200 OK - nested resources for the requested one  <br />404 Not found - if resource with the given {id} does not exist |
