@@ -11,6 +11,10 @@ To-do-app is a RESTful API for managing to-do lists.
 
 ## Request-response table
 
-Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+#Type | #URL | #Parameters | #Response 
+--- | --- | --- | --- |--- |--- |--- 
+#GET | /resources | n/a | 200 OK - all resourcses retrieved
+--- | --- | --- | --- |--- |--- |--- 
+#GET | /resources/{id} | {id} - identifier of specific resource | 200 OK - resource with specified id
+                                                                  404 Not found - if resource with the given {id} does not exist
+
